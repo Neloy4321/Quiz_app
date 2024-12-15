@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Download Button -->
+    <a href="https://drive.google.com/file/d/1IZvdOSHwYoTkEjDjBRlZHE_RQ8Bh1VR8/view?usp=sharing" 
+       id="downloadBtn" 
+       class="download-button" 
+       target="_blank">
+        Download SRS
+    </a>
+
+    <div class="quiz-container">
+        <h1>Quiz</h1>
+        <div id="quiz"></div>
+        <div id="timer">Time Left: 3:00</div>
+        <button id="nextQuestion" style="display: none;">Next</button>
+        <div id="score" style="display: none; margin-top: 20px;">
+            <h2>Your Score: <span id="scoreValue"></span> / <span id="totalQuestions"></span></h2>
+            <button id="restartQuiz">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="js/quiz.js"></script>
+    <script src="js/timer.js"></script>
+</body>
+</html>
